@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Mesin ATM</title>
+    <title>Ambil Tunai</title>
 </head>
-
-<body class="bg-blue-600 mx-12 my-24">
-    <div>
-        <p class="text-center text-white text-4xl">PILIH JUMLAH PAKET TUNAI</p>
+<body class="bg-blue-600">
+</div>
+<p class="text-center text-white text-3xl mt-12">PILIH JUMLAH PAKET TUNAI</p>
+</div>
+<div class="text-center flex justify-center mb-20">
+    <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
+        <button onclick="SeRatus()"><- 100.000</button>
+        <button onclick="duaRatus()"><- 200.000</button>
+        <button onclick="tigaRatus()"><- 300.000</button>
+        <button onclick="limaRatus()"><- 500.000</button>
     </div>
-    <div class="grid grid-cols-2 text-center">
-        <div class="text-white text-4xl mt-10">
-            <button onclick=""><p class="mt-10"> <- 100.000</p></button>
-            <button onclick=""><p class="mt-10"> <- 200.000</p></button>
-            <button onclick=""><p class="mt-10"> <- 300.000</p></button>
-            <button onclick=""><p class="mt-10"> <- 500.000</p></button>
-        </div>
-        <div class="text-white text-4xl mt-14">
-            <button onclick=""></button><p class="mt-10"> 1.000.000 -></p></a>
-            <button onclick=""></button><p class="mt-10"> 1.500.000 -></p></a>
-            <button onclick=""></button><p class="mt-10"> 2.000.000 -></p></a>
-            <button onclick=""></button><p class="mt-10"> TRANSAKSI<br> LAINNYA -></p></a>
-        </div>
+    <div class="grid space-y-20 w-1/2 text-white text-3xl mt-20">
+        <button onclick="satujuta()">1.000.000 -></button>
+        <button onclick="satusetengah()">1.500.000 -></button>
+        <button onclick="duajuta()">2.000.000 -></button>
+        <a href="jenistransaksi.html" class="mr-36">TRANSAKSI LAINNYA -></a>
     </div>
+</div>
+</div>
+</div>
 </body>
-<script>
-    let saldo = 5000000;
-    let paket = {
-        seratus:'100000',
-        duaratus:'200000',
-        tigaratus:'300000',
-        limaratus:'500000',
-        satujuta:'1000000',
-        satusetengah:'1500000',
-        duajuta:'2000000',
-</script>
 </html>
